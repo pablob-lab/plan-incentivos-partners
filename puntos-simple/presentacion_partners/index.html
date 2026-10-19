@@ -95,11 +95,15 @@
 .steps .t{font:700 14px var(--fb);letter-spacing:.14em;text-transform:uppercase;opacity:.75}
 .steps .m{font:800 58px/1 var(--fh);letter-spacing:-.05em;margin:10px 0}
 .steps .d{font-size:21px;line-height:1.35;opacity:.92}
-.prem{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;width:100%;margin-top:36px}
+.prem{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;width:100%;margin-top:36px}
 .prem .p{background:var(--w4);border:1px solid var(--w10);border-radius:20px;padding:28px 26px}
 .prem .p .pts{font:800 52px var(--fh);letter-spacing:-.05em;color:var(--yel300);line-height:1}
 .prem .p .u{font-size:17px;color:var(--text-muted);margin:6px 0 18px}
 .prem .p b{display:block;font:600 26px/1.1 var(--fh);letter-spacing:-.03em}
+.prem .p .rk{font:800 40px var(--fh);letter-spacing:-.05em;margin-bottom:2px}
+.prem .p .th{font-size:17px;color:var(--text-muted);margin-bottom:16px}
+.prem .p .pz{display:flex;justify-content:space-between;gap:10px;border-top:1px solid var(--w10);padding:10px 0;font-size:20px}
+.prem .p .pz span{color:var(--yel300);font:700 19px var(--fh);white-space:nowrap}
 .reveal .present .sl .steps>*,.reveal .present .sl .prem>*{animation:ya-rise-in .8s cubic-bezier(.16,1,.3,1) both}
 .reveal .present .sl .steps>*:nth-child(3),.reveal .present .sl .prem>*:nth-child(2){animation-delay:.1s}
 .reveal .present .sl .steps>*:nth-child(5),.reveal .present .sl .prem>*:nth-child(3){animation-delay:.2s}
@@ -136,17 +140,23 @@
  <div class="footer-bar"><span>yavendió! · Plan de Puntos 2026</span><span>02</span></div>
 </div></section>
 
-<!-- 3 PREMIOS -->
+<!-- 3 RANGOS Y PREMIOS -->
 <section class="bg-ink"><div class="sl">
  <img class="ya-logo" src="web/wordmark-white.png" alt="yavendió!">
- <p class="kicker">Tus premios</p>
- <h2 class="h2">Junta puntos y cámbialos por esto.</h2>
+ <p class="kicker">Tus rangos y premios</p>
+ <h2 class="h2">Más puntos al mes, más premios se abren.</h2>
  <div class="prem">
-  <div class="p"><div class="pts">3.000</div><div class="u">puntos · valen $300</div><b>Pauta para tu evento</b></div>
-  <div class="p"><div class="pts">8.000</div><div class="u">puntos · valen $800</div><b>Viaje nacional</b></div>
-  <div class="p"><div class="pts">15.000</div><div class="u">puntos · valen $1.500</div><b>Equipo</b></div>
-  <div class="p" style="border-color:var(--yel300)"><div class="pts">25.000</div><div class="u">puntos · valen $2.500</div><b>Viaje internacional</b></div>
+  <div class="p"><div class="rk">Rubí</div><div class="th">desde 1.000 puntos al mes</div>
+   <div class="pz"><b style="font-size:20px;font-weight:500">Pauta para tu evento</b><span>3.000</span></div>
+   <div class="pz"><b style="font-size:20px;font-weight:500">Viaje nacional</b><span>8.000</span></div></div>
+  <div class="p"><div class="rk">Esmeralda</div><div class="th">desde 5.000 puntos al mes</div>
+   <div class="pz"><b style="font-size:20px;font-weight:500">Equipo</b><span>15.000</span></div>
+   <div class="pz" style="opacity:.7"><b style="font-size:18px;font-weight:500">Más lo de Rubí</b><span></span></div></div>
+  <div class="p" style="border-color:var(--yel300)"><div class="rk">Zafiro</div><div class="th">desde 10.000 puntos al mes</div>
+   <div class="pz"><b style="font-size:20px;font-weight:500">Viaje internacional</b><span>25.000</span></div>
+   <div class="pz" style="opacity:.7"><b style="font-size:18px;font-weight:500">Más todo lo anterior</b><span></span></div></div>
  </div>
+ <p class="muted-d" style="margin-top:22px;font-size:17px">Los números de los premios son puntos. Cada punto vale $0,10.</p>
  <div class="footer-bar"><span>yavendió! · Plan de Puntos 2026</span><span>03</span></div>
 </div></section>
 
@@ -157,13 +167,13 @@
  <h2 class="h2" style="margin-bottom:26px">¿Cuánto es eso en la práctica?</h2>
  <div class="grid g3 ex">
   <div class="card card--light"><span class="tagc">4 clientes PRO ($89)</span><div class="big">356</div><div class="l">puntos al mes</div><hr>
-   <div class="row"><span>En premios</span><b>$36 al mes</b></div>
+   <div class="row"><span>Rango</span><b>Aún sin rango</b></div><div class="row"><span>En premios</span><b>$36 al mes</b></div>
    <div class="win">$107 en créditos de conversaciones en 3 meses</div></div>
   <div class="card card--light"><span class="tagc">10 clientes Crece ($264)</span><div class="big">2.640</div><div class="l">puntos al mes</div><hr>
-   <div class="row"><span>En premios</span><b>$264 al mes</b></div>
+   <div class="row"><span>Rango</span><b>Rubí</b></div><div class="row"><span>En premios</span><b>$264 al mes</b></div>
    <div class="win">Pauta en 2 meses, viaje nacional en 4</div></div>
   <div class="card card--light" style="background:var(--ind100);border-color:var(--ind200)"><span class="tagc">38 clientes Crece ($264)</span><div class="big" style="color:var(--ind500)">10.032</div><div class="l">puntos al mes</div><hr>
-   <div class="row"><span>En premios</span><b>$1.003 al mes</b></div>
+   <div class="row"><span>Rango</span><b>Zafiro</b></div><div class="row"><span>En premios</span><b>$1.003 al mes</b></div>
    <div class="win">Viaje internacional en 3 meses</div></div>
  </div>
  <p class="muted" style="margin-top:20px;font-size:17px">Sin paquetes extra. Tu comisión del contrato va aparte, igual que hoy.</p>
